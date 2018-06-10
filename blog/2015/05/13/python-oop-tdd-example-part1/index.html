@@ -302,7 +302,7 @@ tests/test_binary.py:2: <span class="nv">ValueError</span>
 
 
 <h3>Project structure</h3>
-<p>I warmly suggest to check <a href="https://pytest.org/latest/goodpractises.html">this page</a> for a project layout that allows py.test to work flawlessly. To avoid putting too many things in this post I am going to run <code>py.test</code> with a custom <code>PYTHONPATH</code> to make it correctly import the code. However, please remember that this setup is just a trick for simplicity's sake. Check <a href="http://www.jeffknupp.com/blog/2013/08/16/open-sourcing-a-python-project-the-right-way/">this detailed post</a> by Jeff Knupp to learn a lot about Python packaging and project layouts.</p>
+<p>I warmly suggest to check <a href="https://docs.pytest.org/en/latest/goodpractices.html">this page</a> for a project layout that allows py.test to work flawlessly. To avoid putting too many things in this post I am going to run <code>py.test</code> with a custom <code>PYTHONPATH</code> to make it correctly import the code. However, please remember that this setup is just a trick for simplicity's sake. Check <a href="http://www.jeffknupp.com/blog/2013/08/16/open-sourcing-a-python-project-the-right-way/">this detailed post</a> by Jeff Knupp to learn a lot about Python packaging and project layouts.</p>
 <h3>Writing the class</h3>
 <p>Trying to run the tests at this point just returns a big failure due to an import error, since the <code>binary.py</code> module does not exists yet.</p>
 <div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>~/binary$ <span class="nv">PYTHONPATH</span><span class="o">=</span>. py.test -v
